@@ -1,6 +1,10 @@
 
 
 @mixin header_styles($type) {
+  header {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .header {
     background-color: var(--brand-color-1);
     height: #{my_calc($type, 170)};
@@ -67,4 +71,11 @@
 }
 @media screen and (min-width: 1921px) {
   @include header_styles ('big');
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 88px;
+    overflow: hidden;
+  }
 }

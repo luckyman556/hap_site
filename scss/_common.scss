@@ -30,10 +30,27 @@
   }
 
 }
-@include common_styles ('px');
-
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   @include common_styles('vw');
 }
 
+@media screen and (max-width: 1024px) {
+  @include common_styles ('px');
+}
+@media screen and (min-width: 1921px) {
+  @include common_styles ('big');
+}
+@media screen and (max-width: 1024px) {
+  .common-title {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .text-block {
+    font-weight: 325;
+    font-size: 17.5px;
+    line-height: 36px;
+    padding: 32px 0;
+  }
+
+}
 

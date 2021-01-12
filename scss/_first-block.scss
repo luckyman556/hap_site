@@ -13,6 +13,7 @@
       height: 100%;
       display: block;
       object-fit: cover;
+      object-position: center;
     }
     h1 {
       font-family: aireboldpro;
@@ -61,4 +62,28 @@
 }
 @media screen and (min-width: 1921px) {
   @include first_block_styles ('big');
+}
+@media screen and (max-width: 1024px) {
+  .top-block {
+    height: calc(100vh - 88px);
+    &__bg {
+
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: normal;
+      padding: 0 32px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 18px;
+      padding-right: 32px;
+    }
+    &__scroll-down {
+
+    }
+  }
 }
