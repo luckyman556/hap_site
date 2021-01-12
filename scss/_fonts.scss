@@ -1,0 +1,12 @@
+@mixin add_font($fontFamily, $weight, $fileNAme) {
+  @font-face {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    font-style: normal;
+    src: url("../fonts/" + $fontFamily +  "/" + $fileNAme +".eot") format("embedded-opentype");
+    src: url("../fonts/" + $fontFamily +  "/" + $fileNAme +".eot?#iefix") format("embedded-opentype"), url("../fonts/" + $fontFamily +  "/" + $fileNAme +".woff2") format("woff2"), url("../fonts/" + $fontFamily +  "/" + $fileNAme +".ttf") format("truetype");
+  }
+}
+@include add_font ('gotham', 400, 'Gotham-Light');
+@include add_font ('gotham', 500, 'Gotham-Medium');
+@include add_font ('aireboldpro', 400, 'AireBoldPro');

@@ -1,0 +1,11 @@
+{
+  "name": "Constructor hap",
+  "version": "0.1",
+  "description": "Constructor hap",
+  "scripts": {
+    "scss": "node-sass --source-map true --watch scss -o css "
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

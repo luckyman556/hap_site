@@ -1,0 +1,70 @@
+
+
+@mixin header_styles($type) {
+  .header {
+    background-color: var(--brand-color-1);
+    height: #{my_calc($type, 170)};
+    .row {
+      padding: 0 #{my_calc($type, 64)};
+      height: 100%;      
+      justify-content: space-between;
+    }
+    &__logo {
+      margin: auto;
+      width: #{my_calc($type, 181)};
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    &__menu-btn {
+      margin: auto 0;
+      display: flex;
+      .lines {
+        position: relative;
+        width: #{my_calc($type, 32)};
+        height: #{my_calc($type, 32)};
+        span {
+          height: 2px;
+          background-color: white;
+          display: block;
+          position: absolute;
+          left: 5px;
+          &:nth-child(1) {
+            width: #{my_calc($type, 17)};
+            top: 7px; 
+          }
+          &:nth-child(2) {
+            width: #{my_calc($type, 21)};
+            top: 15px; 
+          }
+          &:nth-child(3) {
+            width: #{my_calc($type, 17)};
+            top: 23px; 
+          }
+        }
+      }
+      .text {
+        font-family: 'gotham';
+        text-transform: uppercase;
+        font-size: #{my_calc($type, 18)};
+        line-height: #{my_calc($type, 30)};
+        padding-top: #{my_calc($type, 2)};
+        padding-left: #{my_calc($type, 8)};
+        letter-spacing: #{my_calc($type, 1.5)};
+        color: white
+      }
+    }
+  }
+
+}
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  @include header_styles('vw');
+}
+
+@media screen and (max-width: 1024px) {
+  @include header_styles ('px');
+}
+@media screen and (min-width: 1921px) {
+  @include header_styles ('big');
+}

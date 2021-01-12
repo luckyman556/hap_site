@@ -1,0 +1,22 @@
+
+
+@function my_calc($type, $number, $font : false) {
+
+  $my_calc_text : $number / 1457 * 100;
+  $elseNumber : if($type == 'big', $number  * (1920 / 1457) ,  $number);
+  @return unquote(if($type == 'vw', $my_calc_text + 'vw' ,    $elseNumber + 'px'));
+}
+
+@mixin common_styles($type) {
+  .row {
+    display: flex;
+  }
+
+}
+@include common_styles ('px');
+
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  @include common_styles('vw');
+}
+
+
