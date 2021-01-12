@@ -22,9 +22,39 @@
 .row {
   display: flex; }
 
+.common-title {
+  font-family: AireBoldPro;
+  font-size: 60px;
+  line-height: 60px;
+  /* or 100% */
+  letter-spacing: 0.05em;
+  text-transform: uppercase; }
+
+.text-block {
+  font-family: gotham;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 36px;
+  letter-spacing: 0.12em; }
+
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .row {
-    display: flex; } }
+    display: flex; }
+  .common-title {
+    font-family: AireBoldPro;
+    font-size: 60px;
+    line-height: 60px;
+    /* or 100% */
+    letter-spacing: 0.05em;
+    text-transform: uppercase; }
+  .text-block {
+    font-family: gotham;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2011vw;
+    line-height: 2.47083vw;
+    letter-spacing: 0.12em; } }
 
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .header {
@@ -307,5 +337,50 @@
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 1; } }
+
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  .img-text-1_1 {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    width: 90.04804vw;
+    padding: 4.39259vw 0; }
+    .img-text-1_1 .common-title {
+      white-space: pre; }
+    .img-text-1_1 .img-part {
+      width: 42.82773vw; }
+    .img-text-1_1 .text-part {
+      width: 39.39602vw;
+      margin: auto auto; } }
+
+@media screen and (max-width: 1024px) {
+  .img-text-1_1 {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    width: 1312px;
+    padding: 64px 0; }
+    .img-text-1_1 .common-title {
+      white-space: pre; }
+    .img-text-1_1 .img-part {
+      width: 624px; }
+    .img-text-1_1 .text-part {
+      width: 574px;
+      margin: auto auto; } }
+
+@media screen and (min-width: 1921px) {
+  .img-text-1_1 {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    width: 1728.92244px;
+    padding: 84.33768px 0; }
+    .img-text-1_1 .common-title {
+      white-space: pre; }
+    .img-text-1_1 .img-part {
+      width: 822.29238px; }
+    .img-text-1_1 .text-part {
+      width: 756.40357px;
+      margin: auto auto; } }
 
 /*# sourceMappingURL=style.css.map */

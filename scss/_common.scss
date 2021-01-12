@@ -11,6 +11,23 @@
   .row {
     display: flex;
   }
+  .common-title {
+    font-family: AireBoldPro;
+    font-size: 60px;
+    line-height: 60px;
+    /* or 100% */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .text-block {
+    font-family: gotham;
+    font-style: normal;
+    font-weight: 400;
+    font-size: #{my_calc($type, 17.5)};
+    line-height: #{my_calc($type, 36)};
+    letter-spacing: 0.12em;
+  }
 
 }
 @include common_styles ('px');

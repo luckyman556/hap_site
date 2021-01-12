@@ -1,0 +1,29 @@
+@mixin img_text_1_1_styles($type) {
+  .img-text-1_1 {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    width: #{my_calc($type, 1312)};
+    padding: #{my_calc($type, 64)} 0;
+    .common-title {
+      white-space: pre;
+    }
+    .img-part {
+      width: #{my_calc($type, 624)};
+    }
+    .text-part {
+      width: #{my_calc($type, 574)};
+      margin: auto auto;
+    }
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  @include img_text_1_1_styles('vw');
+}
+
+@media screen and (max-width: 1024px) {
+  @include img_text_1_1_styles ('px');
+}
+@media screen and (min-width: 1921px) {
+  @include img_text_1_1_styles ('big');
+}
