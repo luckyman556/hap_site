@@ -30,27 +30,39 @@
   }
 
 }
+@include common_styles ('px');
+
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   @include common_styles('vw');
 }
 
-@media screen and (max-width: 1024px) {
-  @include common_styles ('px');
+.subtitle-text {
+  font-family: 'gotham';
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-color-1);
 }
-@media screen and (min-width: 1921px) {
-  @include common_styles ('big');
-}
-@media screen and (max-width: 1024px) {
-  .common-title {
-    font-size: 44px;
-    line-height: 44px;
-  }
-  .text-block {
-    font-weight: 325;
-    font-size: 17.5px;
-    line-height: 36px;
-    padding: 32px 0;
-  }
 
+.selection-title {
+  font-family: AireBoldPro;
+  font-size: 150px;
+  line-height: 155px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-color-1);
 }
+
+.text-block {
+  font-family: gotham;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 36px;
+  letter-spacing: 0.12em;
+  color: var(--text-color-1);
+}
+
 
